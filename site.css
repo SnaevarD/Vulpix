@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: unset;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+a {
+    /* color: #d4938b; */
+    color: #97534c;
+}
+
+a:active, a:hover {
+    color: #ebbbaa;
+}
+
+/****************
+    Containers
+****************/
+
+.container {
+    max-width: 998px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.contactForm_Container {
+    margin: 80px auto;
+}
+
+/*********************
+    Containers Ends
+*********************/
+
+/****************
+    Navigation
+****************/
+
+.navigation {
+    height: 80px;
+    background: #d4938b;
+}
+
+.navigationContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigationTitle {
+    color: white;
+}
+
+.navigationLinks {
+
+}
+
+.navLink {
+    color: white;
+    margin: 0 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid transparent;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    border-color: white;
+    color: white;
+}
+
+.navLink:last-child {
+    margin: 0 0 0 15px;
+}
+
+/*********************
+    Navigation Ends
+*********************/
+
+/************
+    Banner
+************/
+
+.banner {
+    margin: 80px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    position: relative;
+}
+
+.bannerTitle {
+    position: absolute;
+    bottom: 0px;
+    right: calc(50% - 211px);
+    width: 422px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 0 0 3px 0;
+    border-radius: 4px;
+}
+
+.bannerImg {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+    border: 2px solid #ebbbaa;
+}
+
+.bannerImg_1 {
+    background-image: url('img/mynd1.jpg');
+    margin-top: 80px;
+}
+
+.bannerImg_2 {
+    background-image: url('img/mynd3.jpg');
+}
+
+.bannerImg_3 {
+    background-image: url('img/mynd4.jpg');
+    background-position: 50% 40%;
+    margin-top: 80px;
+}
+
+/******************
+    Banner Ends
+******************/
+
+/****************
+    Gift List
+****************/
+
+.giftList {
+    
+}
+
+.giftText {
+    padding-bottom: 20px;
+    max-width: 620px;
+}
+
+.gift {
+    display: grid;
+    grid-template-columns: 250px 350px;
+    grid-gap: 20px;
+    margin-bottom: 30px;
+}
+
+.giftImage {
+    width: 100%;
+    max-width: 320px;
+    border: 1px solid #ebbbaa;
+    border-radius: 4px;
+}
+
+.giftName {
+    margin-top: 20px;
+}
+
+.giftDescription {
+
+}
+
+.giftInformation {
+    padding-top: 20px;
+}
+
+/*********************
+    Gift List END
+*********************/
+
+
+.mediumText {
+    max-width: 650px;
+}
+
+.textInput {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+input {
+    border: 2px solid #ebbbaa;
+    border-radius: 8px;
+    outline: none;
+    padding: 10px 15px;
+}
+
+.select {
+    width: 45px;
+    padding: 8px 4px;
+    border: 2px solid #ebbbaa;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.selectContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.selectContainer label {
+    margin-bottom: 5px;
+}
+
+.radioContainer {
+    display: flex;
+}
+
+.radioInput {
+    display: none;
+}
+
+.radioLabel {
+    position: relative;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.radioMark {
+    height: 18px;
+    width: 18px;
+    border: 2px solid #ebbbaa;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(100% + 5px);
+}
+
+.radioMark::after {
+    content: '';
+}
+
+.radioInput:checked + .radioMark::after {
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    border-radius: 50%;
+    background: #d4938b;
+    top: calc(50% - 3px);
+    left: calc(50% - 3px);
+}
+
+.btn {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    background: white;
+    padding: 8px 16px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-rose {
+    border: 2px solid #ebbbaa;
+    border-radius: 8px;
+}
+
+.btn-rose:active {
+    background-color: #f6dcd3;
+}
+
+.btn-rose:hover {
+    background-color: #f6dcd3;
+}
+
+.form {
+    padding: 20px;
+    border: 2px solid #ebbbaa;
+    border-radius: 8px;
+    max-width: 365px;
+}
+
+.formTitle {
+    margin: 0 0 20px 0;
+}
+
+.roseText {
+    background: linear-gradient(90deg, rgba(235,187,170,1) 0%, rgba(212,147,139,1) 30%, rgba(151,83,76,1) 67%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.roseBackground {
+    /* background: rgb(246,220,211); */
+    background: linear-gradient(45deg, rgba(246,220,211,1) 0%, rgba(151,76,76,1) 40%, rgba(212,147,139,1) 67%);
+}
+
+
+/*****************
+    Media Query
+******************/
+
+@media(max-width: 668px) {
+
+    .navigationContainer {
+        justify-content: center;
+    }
+
+    .navigationLinks {
+        display: none;
+    }
+
+    .banner {
+        padding: 0px 20px;
+        margin: 60px 0;
+        overflow: hidden;
+    }
+
+    .bannerTitle {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .gift {
+        grid-template-columns: 1fr;
+    }
+} 

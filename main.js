@@ -32,10 +32,16 @@ function submitForm(e){
     // Save message
     saveMessage(name, attendance, adults, children);
 
-    // Show alert
+    // Hide form
+    document.getElementById('contactForm').classList.add('hide');
 
-    // Clear form
-
+    // Form success message
+    if(attendance === "Kem") {
+        document.getElementById('contactForm_Message_One').classList.add('show');
+    }
+    else {
+        document.getElementById('contactForm_Message_Two').classList.add('show');
+    }
 }
 
 // Function to get get form values

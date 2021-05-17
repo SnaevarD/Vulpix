@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="site.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <!--
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">   
+    -->
 </head>
 <body>
     <nav class="navigation">
         <div class="container navigationContainer">
             <h2 class="navigationTitle">Snævarsdóttir</h2>
             <div class="navigationLinks">
-                <a class="navLink" href="#">Upplýsingar</a>
-                <a class="navLink" href="#">Skráning</a>
-                <a class="navLink" href="#">Staðsetning</a>
-                <a class="navLink" href="#">Gjafalisti</a>
+                <a class="navLink bold" href="#upplysingar">Upplýsingar</a>
+                <a class="navLink bold" href="#skraning">Skráning</a>
+                <a class="navLink bold" href="#stadsetning">Staðsetning</a>
+                <a class="navLink bold" href="#gjafalisti">Gjafalisti</a>
+                <a class="navLink bold" href="#images">Myndir</a>
             </div>
         </div>
     </nav>
@@ -21,99 +27,248 @@
         <div class="bannerImg bannerImg_3"></div>
     </div>
     <div class="text container" id="upplysingar">
-        <h2 class="roseText">Skírnarveisla Snævarsdóttur</h2>
-        <p class="mediumText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at interdum dolor, vehicula pulvinar velit. Etiam at suscipit mi. 
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi ac aliquam mi, vel tristique elit. 
-            Donec sit amet scelerisque ante. Sed dui odio, laoreet ut euismod vel, porttitor quis ligula. In dignissim pellentesque interdum.
+        <h2 class="roseText">Kæra fjölskylda og vinir</h2>
+        <p class="mediumText"> Litla daman okkar kom í heiminn þann 23. mars síðastliðinn.  Nú er loksins komið að því að gefa henni nafn og er þér/ykkur því boðið í skírn sunnudaginn 30. maí klukkan 15 í Bústaðakirkju. Skírnarveislan verður haldin í safnaðarheimili kirkjunnar að athöfn lokinni. 
         </p>
-        <p class="mediumText"> Phasellus et mattis ipsum. Fusce cursus faucibus laoreet. Etiam lobortis arcu a mauris ullamcorper feugiat. 
-            Morbi consequat egestas tortor in luctus. In magna ex, interdum eget eleifend a, congue id elit. 
-            Nulla tincidunt nisl quis neque scelerisque sodales. Duis in augue ultrices, congue mi pellentesque, placerat ex. Integer accumsan semper vehicula.
+        <p class="mediumText"> Vinsamlegast staðfestið komu ykkar og fjölda hér að neðan. Okkur þætti vænt um ef þið gætuð einnig fyllt út neðangreint form ef þið komist ekki svo við getum áætlað réttan fjölda.
         </p>
+        <p class="mediumText">Í ljósi aðstæðna í þjóðfélaginu þá gætum við þurft að breyta þeim fjölda sem við bjóðum í veisluna. Við höfum boðið yfir 80 manns í veisluna en við gerum ráð fyrir að fjöldatakmarkanir verði færðar í 100 manns með nýrri reglugerð sem er væntanleg 26./27. maí næstkomandi, sbr. áætlun ríkisstjórnarinnar. Gangi það ekki eftir gætum við þurft að breyta plönum og munum þá upplýsa alla um stöðu mála. Þangað til krossum við putta!</p>
+        <p class="mediumText">Endilega sendið okkur línu á facebook ef einhverjar spurningar koma upp eða heyrið í okkur í síma <span class="greenText">848-6356 (Sigrún)</span> eða <span class="greenText">616-2636 (Snævar).</span> </p>
+        <p class="mediumText bold">Hlökkum til að sjá ykkur,<br>Sigrún, Snævar og fröken Snævarsdóttir.</p>
     </div>
-    <div class="contactForm_Container container" id="hafaSamband">
-        <form class="form contactForm" id="contactForm" name="attendanceForm">
-            <h2 class="formTitle">Láttu vita hvort þú/þið komist!</h2>
-            <div class="radioContainer">
-                <label for="kem" class="radioLabel" >Kem
-                    <input class="radioInput" type="radio" id="kem" name="attendance" value="Kem" checked />
-                    <span class="radioMark"></span>
-                </label>
-                <label for="kemEkki" class="radioLabel">Kem ekki
-                    <input class="radioInput" type="radio" id="kemEkki" name="attendance" value="Kem Ekki" />
-                    <span class="radioMark"></span>
-                </label>
-            </div>
-            <input class="textInput" id="name" type="text" placeholder="Nafn" />
-            <div class="selectContainer">
-                <label>Fjöldi fullorðna</label>
-                <select class="select" id="adults">
-                    <option value="1" selected>1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                </select>
-            </div>
-            <div class="selectContainer">
-                <label>Fjöldi barna (yngri en 16 ára)</label>
-                <select class="select" id="children">
-                    <option value="0" selected>0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                </select>
-            </div>
-            <button class="btn btn-rose" type="submit">SENDA</button>
-        </form>
+    <div class="container contactForm_MainContainer" id="skraning">
+        <h2 class="roseText">Skráning</h2>
+        <div class="contactForm_Container">
+            <form class="form contactForm" id="contactForm" name="attendanceForm">
+                <h2 class="formTitle">Láttu vita hvort þú/þið komist!</h2>
+                <div class="radioContainer">
+                    <label for="kem" class="radioLabel" >Kem
+                        <input class="radioInput" type="radio" id="kem" name="attendance" value="Kem" checked />
+                        <span class="radioMark"></span>
+                    </label>
+                    <label for="kemEkki" class="radioLabel">Kem ekki
+                        <input class="radioInput" type="radio" id="kemEkki" name="attendance" value="Kem Ekki" />
+                        <span class="radioMark"></span>
+                    </label>
+                </div>
+                <input class="textInput" id="name" type="text" placeholder="Nafn" />
+                <div class="selectContainer">
+                    <label>Fjöldi fullorðna</label>
+                    <select class="select" id="adults">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <div class="selectContainer">
+                    <label>Fjöldi barna (yngri en 16 ára)</label>
+                    <select class="select" id="children">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <button class="btn btn-rose" type="submit">SENDA</button>
+            </form>
+            <h2 class="contactForm_Message hide" id="contactForm_Message_One">Takk fyrir. Hlökkum til að sjá þig/ykkur</h2>
+            <h2 class="contactForm_Message hide" id="contactForm_Message_Two">Takk fyrir að láta okkur vita. Leitt að heyra, sjáumst fljótlega!</h2>
+        </div>
     </div>
     <div class="location container" id="stadsetning">
+        <h2 class="roseText">Staðsetning</h2>
+        <h3>Bústaðarkirkja, Tunguvegur 25, 108 Reykjavík</h3>
+        <h3>30. maí klukkan 15:00</h3>
         <div class="map">
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1741.4373249985742!2d-21.862013483729502!3d64.12110968358371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d6735ff581966b%3A0x3bff24a03102877d!2zQsO6c3Rhw7BhcmtpcmtqYQ!5e0!3m2!1sis!2sis!4v1621208439531!5m2!1sis!2sis" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
     <div class="giftList container" id="gjafalisti">
         <h2 class="roseText">Gjafalisti</h2>
-        <p class="giftText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at interdum dolor, vehicula pulvinar velit. Etiam at suscipit mi. 
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        <div class="gift">
-            <img class="giftImage" src="img/gjafalisti_1.jpg" />
-            <div class="giftInformation">
-                <a class="giftName" href="https://www.babybrezza.is/vara/foodmaker-deluxe/?v=0bfc16cc12ef">FOODMAKER DELUXE</a>
-                <p class="giftDescription">Gufusjóða, blanda, afþýða, hita. Allt þetta er hægt að gera með einni og sömu vélinni, með lágmarks tilhöfn. </p>
+        <p class="giftText">Litla daman okkar er ótrúlega heppin með vini og ættingja og hefur nú þegar fengið mikið af fallegum flíkum í sængurgjöf. Þar sem við foreldrarnir búum í lítilli 60m2 íbúð og höfum takmarkað pláss þá langar okkur til þess að benda á framtíðarreikninginn sem við stofnuðum fyrir fröken Snævarsdóttur. 
+        </p>
+        <p class="giftText bold">Reikningsnúmer: 511-18-275</p>
+        <p class="giftText bold">Kennitala: 230321-2800</p>
+        <p class="giftText topMargin30">Fyrir þá sem eru hrifnari af því að gefa muni þá er hér að neðan að finna lista með hlutum sem við höfum augastað á (& passa inn í litarpalletuna hennar Sigrúnar😂🙈):</p>
+        <div class="giftContainer">
+            <div class="gift">
+                <img class="giftImage" src="img/Staflturnioskalitum.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.ninekids.is/collections/vidarleikfong/products/staflturn-i-oskalitum-fra-raduga-grez">Staflturn í óskalitum</a>
+                    <p class="giftDescription">Staflturn í regnbogalitum frá  Rússneska framleiðandanum Raduga Grëz. Staflturninn frá Raduga Grëz samanstendur af 7 viðarplötum, sem eru hringlaga og hafa allar sitthvora stærðina og litinn.</p>
+                </div>
             </div>
-        </div>
-        <div class="gift">
-            <img class="giftImage" src="img/gjafalisti_1.jpg" />
-            <div class="giftInformation">
-                <a class="giftName" href="https://www.babybrezza.is/vara/foodmaker-deluxe/?v=0bfc16cc12ef">FOODMAKER DELUXE</a>
-                <p class="giftDescription">Gufusjóða, blanda, afþýða, hita. Allt þetta er hægt að gera með einni og sömu vélinni, með lágmarks tilhöfn. </p>
+            <div class="gift">
+                <img class="giftImage" src="img/oskasteinar.jpeg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.valhneta.is/index.php/product/oskasteinar/">Camilla – kisa</a>
+                    <p class="giftDescription">20 bita handgert óskasteinasett í pastellitum frá Rússneska framleiðandanum Raduga Grëz. Leikfangið er opið og með kubbunum er hægt að búa til hvað sem er. Einnig er góð hugmynd að nota þá í lærdómsleiki.</p>
+                </div>
             </div>
-        </div>
-        <div class="gift">
-            <img class="giftImage" src="img/gjafalisti_1.jpg" />
-            <div class="giftInformation">
-                <a class="giftName" href="https://www.babybrezza.is/vara/foodmaker-deluxe/?v=0bfc16cc12ef">FOODMAKER DELUXE</a>
-                <p class="giftDescription">Gufusjóða, blanda, afþýða, hita. Allt þetta er hægt að gera með einni og sömu vélinni, með lágmarks tilhöfn. </p>
+            <div class="gift">
+                <img class="giftImage" src="img/draumabogi.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.valhneta.is/index.php/product/tre-regnbogi/">Draumaregnbogi</a>
+                    <p class="giftDescription">Draumaregnboginn frá Rússneska framleiðandanum Raduga Grëz. Regnboginn frá Raduga Grëz samanstendur af 7 formbeygðum handgerðum viðarplötum, sem eru bogalaga og hafa allar sitthvora stærðina og litinn.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/rimogroms.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.forlagid.is/vara/rim-og-roms/">Rím og roms</a>
+                    <p class="giftDescription">Rím og roms geymir nýjar og skemmtilegar vísur og myndir eftir Þórarin og Sigrúnu Eldjárn – um kaldar og heitar hendur, heilagar kýr, kubba, tröll og margt margt fleira. Óskabók fyrir litla og stóra ljóðaorma.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/niels.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.valhneta.is/index.php/product/api/">Níels</a>
+                    <p class="giftDescription">Níels er leikfangaapi frá breska merkinu Sarah & Bendrix. Handgerður úr ómeðhöndluðum við. Tímalaust og falleg leikfang bæði í leik og í barnaherberginu til skrauts.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/camilla.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.valhneta.is/index.php/product/camilla/">Camilla – kisa</a>
+                    <p class="giftDescription">Camilla er leikfangaköttur frá breska merkinu Sarah & Bendrix. Hægt er að taka höfuðið af og raða hringjunum upp á nýtt til að æfa fínhreyfingar.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/pawpatrol.jpeg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.forlagid.is/vara/stora-bokin-um-hvolpasveitina/">Stóra bókin um Hvolpasveitina</a>
+                    <p class="giftDescription">Þetta er bókin um hvolpana, farartækin þeirra og alla sigrana!</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/gullbra.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.penninn.is/is/book/gullbra-og-birnirnir-thrir">Gullbrá og birnirnir þrír</a>
+                    <p class="giftDescription">Sögurnar og sígildu ævintýrin í bókaflokknum
+                        "Ég get lesið" eru sérstaklega endurskrifaðar fyrir
+                        byrjendur í lestri. Bækurnar eru hugsaðar til að
+                        styðja við lestrarþjálfun ungra barna og auðvelda
+                        þeim fyrstu skrefin í átt að læsi.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/vogguvisurnar.jpeg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.forlagid.is/vara/voegguvisurnar-okkar/">Vögguvísurnar okkar</a>
+                    <p class="giftDescription"> Yndislegar vögguvísur, gamlar og nýjar, allt frá þjóðlegum og þulum til Megasar og Braga Valdimars.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/Fyrstu-50-ordin.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.forlagid.is/vara/fyrstu-50-or%C3%B0in-klar-krili/">Fyrstu 50 orðin – klár kríli</a>
+                    <p class="giftDescription">Bók með lyfti- og flettiflipum sem barninu finnst gaman að nota og safnar um leið yfir fimmtíu grundvallarorðum í orðaforðann.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage giftImage--lower" src="img/kardemommu.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.forlagid.is/vara/folk-og-raeningjar-i-kardemommubae/">Fólk og ræningjar í Kardemommubæ</a>
+                    <p class="giftDescription">Bókin er prýdd litmyndum eftir höfundinn og sögunni fylgir fjöldi sönglaga sem flestir þekkja í frábærri þýðingu Kristjáns frá Djúpalæk.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/litliprinsinn.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.forlagid.is/vara/litli-prinsinn-2/">Litli prinsinn</a>
+                    <p class="giftDescription">Litli prinsinn kom fyrst út árið 1943 og fór þá strax sigurför um heiminn. Nú er bókin talin meðal sígildra verka og er gefin út aftur og aftur á fjölmörgum þjóðtungum. Þessi einstæða saga á erindi við alla, unga sem gamla.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/selurinnsnorri.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.forlagid.is/vara/selurinn-snorri/">Selurinn Snorri</a>
+                    <p class="giftDescription">Þetta er 6. útgáfa. Það segir okkur hversu vinsæl bók þessi er. Söguhetjan er kópur sem engu hefur kynnst öðru en hlýju móðurástar. Hann er þó orðinn það stór að hann er farinn að skynja að fleiri eru í heimi hér en þau tvö ein.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/hvarErDepill.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.forlagid.is/vara/hvar-er-depill-2/">Hvar er Depill?</a>
+                    <p class="giftDescription">Í þessu fyrsta ævintýri Depils taka börnin þátt í leitinni að hinum fjöruga og skemmtilega hvolpi með því að lyfta flipunum á hverri síðu og athuga hvað leynist undir þeim.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/feluleikur.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.forlagid.is/vara/kat-krutt-feluleikur/">Kát krútt – Feluleikur</a>
+                    <p class="giftDescription">Hvar er litli hænuunginn og hvar er litla barnið? Er það týnt? 
+                        Auðvelt er að fletta bókinni og finna litríkar myndir í gluggunum.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/hvarerkata.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.forlagid.is/vara/hvar-er-kata/">Hvar er Káta?</a>
+                    <p class="giftDescription">Dragðu út síðurnar og reyndu að finna kisuna Kátu. Spennandi bók fyrir lítil kríli.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/katkrutt.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="">Kát Krútt - Leikur og fjör</a>
+                    <p class="giftDescription">Leikur og fjör!</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/gjafalisti_1.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.babybrezza.is/vara/foodmaker-deluxe/?v=0bfc16cc12ef">FOODMAKER DELUXE</a>
+                    <p class="giftDescription">Gufusjóða, blanda, afþýða, hita. Allt þetta er hægt að gera með einni og sömu vélinni, með lágmarks tilhöfn. </p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/neonate.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://elko.is/bc6900d-neonate-barnapia-800m-dragni">Neonate barnapía BC-6900D</a>
+                    <p class="giftDescription">Barnapía frá Neonate með góða rafhlöðuendingu eða allt að 90klst í biðstöðu. Stór og þægilegur LCD skjár með texta og möguleiki að tengjast 3 tækjum.</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/mjukbok.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://www.ninekids.is/collections/vidarleikfong/products/mjukbok-stor-ocean-pink">Mjúkbók stór - Ocean pink</a>
+                    <p class="giftDescription">Gríðarlega mjúk bók</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/stacking.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://petit.is/collections/leikfong-1/products/stacking-tower-petal">Stacking Tower - Petal</a>
+                    <p class="giftDescription">8 bollar sem hægt er að stafla saman. Framleitt í Danmörku</p>
+                </div>
+            </div>
+            <div class="gift">
+                <img class="giftImage" src="img/woodtoy.jpg" />
+                <div class="giftInformation">
+                    <a class="giftName" href="https://petit.is/collections/leikfong-1/products/vidarleikfong-classic-puzzle-box-1">Viðarleikföng - Classic puzzle box</a>
+                    <p class="giftDescription">Viðarleikfang - Púsluspil</p>
+                </div>
             </div>
         </div>
     </div>
-    <!--
-    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
-    
-    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
-    -->
+    <div class="container imagesContainer" id="images">
+        <h2 class="roseText">Myndir</h2>
+        <p>Hér munu koma myndir úr skírnarveislunni</p>
+    </div>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>

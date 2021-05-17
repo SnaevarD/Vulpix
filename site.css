@@ -386,12 +386,7 @@ input {
     Media Query
 ******************/
 
-@media(max-width: 750px) {
-
-    
-} 
-
-@media(max-width: 798px) {
+@media (max-width: 798px) {
 
     .navigationContainer {
         justify-content: center;

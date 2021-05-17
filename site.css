@@ -165,12 +165,12 @@ a:active, a:hover {
 }
 
 .bannerImg_2 {
-    background-image: url('img/mynd3.jpg');
+    background-image: url('img/mynd_6.jpg');
 }
 
 .bannerImg_3 {
-    background-image: url('img/mynd4.jpg');
-    background-position: 50% 40%;
+    background-image: url('img/mynd_5.jpg');
+    background-position: 50% 20%;
     margin-top: 80px;
 }
 
@@ -368,6 +368,9 @@ input {
 }
 
 .roseText {
+    font-family: 'Parisienne', cursive;
+    font-size: 55px;
+    margin: 20px 0;
     background: linear-gradient(90deg, rgba(235,187,170,1) 0%, rgba(212,147,139,1) 30%, rgba(151,83,76,1) 67%);
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -385,6 +388,11 @@ input {
 
 @media(max-width: 750px) {
 
+    
+} 
+
+@media(max-width: 798px) {
+
     .navigationContainer {
         justify-content: center;
     }
@@ -392,9 +400,6 @@ input {
     .navigationLinks {
         display: none;
     }
-} 
-
-@media(max-width: 668px) {
 
     .banner {
         padding: 0px 20px;
@@ -411,3 +416,9 @@ input {
         grid-template-columns: 1fr 1fr;
     }
 } 
+
+@media(max-width: 550px) {
+    .giftContainer {
+        grid-template-columns: 1fr;
+    }
+}

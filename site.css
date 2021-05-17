@@ -400,6 +400,7 @@ input {
         padding: 0px 20px;
         margin: 60px 0;
         overflow: hidden;
+        grid-template-columns: 1fr 1fr;
     }
 
     .bannerTitle {
@@ -407,13 +408,37 @@ input {
         text-align: center;
     }
 
+    .bannerImg_1 {
+        margin-top: 0px;
+    }
+
+    .bannerImg_2 {
+        display: none;
+    }
+
+    .bannerImg_3 {
+        margin-top: 0px;
+    }
+
     .giftContainer {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .roseText {
+        font-size: 40px;
     }
 } 
 
 @media(max-width: 550px) {
     .giftContainer {
         grid-template-columns: 1fr;
+    }
+    
+    .banner {
+        grid-template-columns: 1fr;
+    }
+
+    .bannerImg_3 {
+        display: none;
     }
 }
